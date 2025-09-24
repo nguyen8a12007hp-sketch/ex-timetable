@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Timetable</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 3px double #555; 
+        }
+
+        th, td {
+            border: 3px double #555; 
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #e0e0e0; 
+        }
+
+        thead th[colspan="6"] {
+            background-color: white;
+            border: none;
+            font-size: 18px;
+            padding: 15px 0;
+        }
+
+        tbody tr:nth-child(3) td {
+            background-color: #f0f0f0;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        tfoot td {
+            background-color: #e0e0e0;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+        h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2><b>Example: Student Timetable</b></h2>
+    <h3><b>Student Timetable - Semester I</b></h3>
+    <table>
+        <thead>
+           
+            <tr>
+                <th><b>Period</b></th>
+                <th><b>Monday</b></th>
+                <th><b>Tuesday</b></th>
+                <th><b>Wednesday</b></th>
+                <th><b>Thursday</b></th>
+                <th><b>Friday</b></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th><b>Period 1</b></th>
+                <td>Math</td>
+                <td></td>
+                <td>English</td>
+                <td>Web Design</td>
+                <td>Math</td>
+            </tr>
+            <tr>
+                <th><b>Period 2</b></th>
+                <td>History</td>
+                <td>Programming</td>
+                <td>Science</td>
+                <td>English</td>
+                <td>PE</td>
+            </tr>
+            <tr>
+                <td colspan="6">Lunch Break</td>
+            </tr>
+            <tr>
+                <th><b>Period 3</b></th>
+                <td></td>
+                <td>Project Work</td>
+                <td>Math</td>
+                <td>Programming</td>
+                <td>Free</td>
+            </tr>
+            <tr>
+                <th><b>Period 4</b></th>
+                <td>English</td>
+                <td>History</td>
+                <td>Science Lab</td>
+                <td>Web Design</td>
+                <td>Math</td>
+            </tr>
+            <tr>
+                <th><b>Period 5</b></th>
+                <td>PE</td>
+                <td>Math</td>
+                <td></td>
+                <td>English</td>
+                <td>Programming</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6">Note: This timetable is subject to change.</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
