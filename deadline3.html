@@ -2,62 +2,51 @@
 <html>
 <head>
     <title>Student Timetable</title>
-    <style>
-        body {
-            font-family: "Times New Roman", Times, serif;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            border: 3px double #555; 
-        }
-
-        th, td {
-            border: 3px double #555; 
-            padding: 10px;
-            text-align: center;
-        }
-
-        th {
-            background-color: #e0e0e0; 
-        }
-
-        thead th[colspan="6"] {
-            background-color: white;
-            border: none;
-            font-size: 18px;
-            padding: 15px 0;
-        }
-
-        tbody tr:nth-child(3) td {
-            background-color: #f0f0f0;
-            font-weight: bold;
-            text-align: center;
-        }
-
-        tfoot td {
-            background-color: #e0e0e0;
-            font-weight: bold;
-            text-align: center;
-            padding: 10px;
-        }
-
-        h2 {
-            margin-bottom: 20px;
-        }
-        h3 {
-            text-align: center;
-        }
-    </style>
 </head>
+<style>
+    body {
+      font-family: "Times New Roman", Times, serif;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 3px double ;
+    }
+
+    th, td {
+      border: 3px double ;
+      padding: 10px;
+      text-align: center;
+    }
+    tbody th {
+      background-color: white;
+    }
+    tbody  td {
+      font-weight: bold;
+      text-align: center;
+    }
+    tfoot td {
+      font-weight: bold;
+      text-align: center;
+      padding: 10px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      text-align: center;
+    }
+  </style>
 <body>
     <h2><b>Example: Student Timetable</b></h2>
     <h3><b>Student Timetable - Semester I</b></h3>
-    <table>
+
+    <table border="3" cellspacing="0" cellpadding="10" style="border-style: double; width: 100%;">
         <thead>
-           
-            <tr>
+            <tr bgcolor="#e0e0e0">
                 <th><b>Period</b></th>
                 <th><b>Monday</b></th>
                 <th><b>Tuesday</b></th>
@@ -68,7 +57,7 @@
         </thead>
         <tbody>
             <tr>
-                <th><b>Period 1</b></th>
+                <td bgcolor="white"><b>Period 1</b></td>
                 <td>Math</td>
                 <td></td>
                 <td>English</td>
@@ -76,18 +65,18 @@
                 <td>Math</td>
             </tr>
             <tr>
-                <th><b>Period 2</b></th>
+                <td bgcolor="white"><b>Period 2</b></td>
                 <td>History</td>
                 <td>Programming</td>
                 <td>Science</td>
                 <td>English</td>
                 <td>PE</td>
             </tr>
-            <tr>
-                <td colspan="6">Lunch Break</td>
+            <tr bgcolor="#f0f0f0">
+                <td colspan="6"><b>Lunch Break</b></td>
             </tr>
             <tr>
-                <th><b>Period 3</b></th>
+                <td bgcolor="white"><b>Period 3</b></td>
                 <td></td>
                 <td>Project Work</td>
                 <td>Math</td>
@@ -95,7 +84,7 @@
                 <td>Free</td>
             </tr>
             <tr>
-                <th><b>Period 4</b></th>
+                <td bgcolor="white"><b>Period 4</b></td>
                 <td>English</td>
                 <td>History</td>
                 <td>Science Lab</td>
@@ -103,7 +92,7 @@
                 <td>Math</td>
             </tr>
             <tr>
-                <th><b>Period 5</b></th>
+                <td bgcolor="white"><b>Period 5</b></td>
                 <td>PE</td>
                 <td>Math</td>
                 <td></td>
@@ -112,8 +101,8 @@
             </tr>
         </tbody>
         <tfoot>
-            <tr>
-                <td colspan="6">Note: This timetable is subject to change.</td>
+            <tr bgcolor="#e0e0e0">
+                <td colspan="6"><b>Note: This timetable is subject to change.</b></td>
             </tr>
         </tfoot>
     </table>
